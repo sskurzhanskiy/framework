@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F13BF238EA212AD1088C789 /* libPods-OneMoreFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BAFC227478D606B76AB1475 /* libPods-OneMoreFramework.a */; };
 		72521C7122818F9A00FF38D8 /* OneMoreFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 72521C6F22818F9A00FF38D8 /* OneMoreFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72521C7D2281A43400FF38D8 /* OneMore.h in Headers */ = {isa = PBXBuildFile; fileRef = 72521C7722818FAF00FF38D8 /* OneMore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72521C7E2281A43700FF38D8 /* OneMore.m in Sources */ = {isa = PBXBuildFile; fileRef = 72521C7822818FAF00FF38D8 /* OneMore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		411A927AF14112D3D012327B /* Pods-OneMoreFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneMoreFramework.release.xcconfig"; path = "Target Support Files/Pods-OneMoreFramework/Pods-OneMoreFramework.release.xcconfig"; sourceTree = "<group>"; };
+		4BAFC227478D606B76AB1475 /* libPods-OneMoreFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneMoreFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B5DDB5514476C4D704B3FC /* Pods-OneMoreFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneMoreFramework.debug.xcconfig"; path = "Target Support Files/Pods-OneMoreFramework/Pods-OneMoreFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		72521C6C22818F9A00FF38D8 /* OneMoreFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OneMoreFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72521C6F22818F9A00FF38D8 /* OneMoreFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneMoreFramework.h; sourceTree = "<group>"; };
 		72521C7022818F9A00FF38D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -25,17 +29,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F13BF238EA212AD1088C789 /* libPods-OneMoreFramework.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FAE66D15AF0BB1E4F49027F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				67B5DDB5514476C4D704B3FC /* Pods-OneMoreFramework.debug.xcconfig */,
+				411A927AF14112D3D012327B /* Pods-OneMoreFramework.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		72521C6222818F9A00FF38D8 = {
 			isa = PBXGroup;
 			children = (
 				72521C6E22818F9A00FF38D8 /* OneMoreFramework */,
 				72521C6D22818F9A00FF38D8 /* Products */,
+				1FAE66D15AF0BB1E4F49027F /* Pods */,
+				EB8533B0F0BC24F37017B757 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +75,14 @@
 			path = OneMoreFramework;
 			sourceTree = "<group>";
 		};
+		EB8533B0F0BC24F37017B757 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BAFC227478D606B76AB1475 /* libPods-OneMoreFramework.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -77,10 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72521C7422818F9A00FF38D8 /* Build configuration list for PBXNativeTarget "OneMoreFramework" */;
 			buildPhases = (
+				F673F48AB134339ACEA862A3 /* [CP] Check Pods Manifest.lock */,
 				72521C6722818F9A00FF38D8 /* Headers */,
 				72521C6822818F9A00FF38D8 /* Sources */,
 				72521C6922818F9A00FF38D8 /* Frameworks */,
 				72521C6A22818F9A00FF38D8 /* Resources */,
+				51F24B4C54266D1C55E61576 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51F24B4C54266D1C55E61576 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneMoreFramework/Pods-OneMoreFramework-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OneMoreFramework/Pods-OneMoreFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F673F48AB134339ACEA862A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneMoreFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		72521C6822818F9A00FF38D8 /* Sources */ = {
@@ -264,6 +338,7 @@
 		};
 		72521C7522818F9A00FF38D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67B5DDB5514476C4D704B3FC /* Pods-OneMoreFramework.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -288,6 +363,7 @@
 		};
 		72521C7622818F9A00FF38D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 411A927AF14112D3D012327B /* Pods-OneMoreFramework.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;

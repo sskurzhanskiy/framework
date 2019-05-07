@@ -8,10 +8,18 @@
 
 #import "OneMore.h"
 
+#import "Masonry.h"
+#import <OneSignal/OneSignal.h>
+
 @implementation OneMore
 
 -(void)printLog {
     NSLog(@"%s", __PRETTY_FUNCTION__);
+    
+    [OneSignal sendTag:@"tag-1" value:@"value-1"];
+    [OneSignal getTags:^(NSDictionary *result) {
+        NSLog(@"---> %@", result);
+    }];
 }
 
 @end
