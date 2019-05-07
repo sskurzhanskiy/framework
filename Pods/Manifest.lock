@@ -1,0 +1,24 @@
+PODS:
+  - Masonry (1.1.0)
+  - OneSignal (2.10.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Masonry
+  - OneSignal
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+    - OneSignal
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  OneSignal: 0f5ff711d9f25da54885e4ab06ef0abc221a46ef
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 169939d7a49e04709746edcb9065cd26bf1433d3
+
+COCOAPODS: 1.6.1
