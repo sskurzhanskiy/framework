@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		72521C7122818F9A00FF38D8 /* OneMoreFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 72521C6F22818F9A00FF38D8 /* OneMoreFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		72521C7922818FAF00FF38D8 /* OneMore.h in Headers */ = {isa = PBXBuildFile; fileRef = 72521C7722818FAF00FF38D8 /* OneMore.h */; };
-		72521C7A22818FAF00FF38D8 /* OneMore.m in Sources */ = {isa = PBXBuildFile; fileRef = 72521C7822818FAF00FF38D8 /* OneMore.m */; };
+		72521C7D2281A43400FF38D8 /* OneMore.h in Headers */ = {isa = PBXBuildFile; fileRef = 72521C7722818FAF00FF38D8 /* OneMore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72521C7E2281A43700FF38D8 /* OneMore.m in Sources */ = {isa = PBXBuildFile; fileRef = 72521C7822818FAF00FF38D8 /* OneMore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +65,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72521C7922818FAF00FF38D8 /* OneMore.h in Headers */,
+				72521C7D2281A43400FF38D8 /* OneMore.h in Headers */,
 				72521C7122818F9A00FF38D8 /* OneMoreFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72521C7A22818FAF00FF38D8 /* OneMore.m in Sources */,
+				72521C7E2281A43700FF38D8 /* OneMore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
