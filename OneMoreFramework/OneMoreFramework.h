@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <OneMoreFramework/OneMore.h>
 
 //! Project version number for OneMoreFramework.
 FOUNDATION_EXPORT double OneMoreFrameworkVersionNumber;
