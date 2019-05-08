@@ -10,6 +10,7 @@
 
 #import "Masonry.h"
 #import "SVProgressHUD.h"
+#import "RestKit.h"
 #import <OneSignal/OneSignal.h>
 
 @implementation OneMore
