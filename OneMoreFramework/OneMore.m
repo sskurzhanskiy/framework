@@ -9,6 +9,7 @@
 #import "OneMore.h"
 
 #import "Masonry.h"
+#import "SVProgressHUD.h"
 #import <OneSignal/OneSignal.h>
 
 @implementation OneMore
@@ -20,6 +21,11 @@
     [OneSignal getTags:^(NSDictionary *result) {
         NSLog(@"---> %@", result);
     }];
+    
+    SVProgressHUD *hud = [SVProgressHUD new];
+    hud.tag = 123;
+    
+    NSLog(@"---> %ld", (long)hud.tag);
 }
 
 @end
