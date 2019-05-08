@@ -26,7 +26,10 @@
     SVProgressHUD *hud = [SVProgressHUD new];
     hud.tag = 123;
     
-    NSLog(@"---> %ld", (long)hud.tag);
+    RKObjectManager *objectManager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"https://google.com"]];
+    [objectManager setAcceptHeaderWithMIMEType:RKMIMETypeJSON];
+    
+    NSLog(@"---> %@", objectManager.baseURL);
 }
 
 @end
